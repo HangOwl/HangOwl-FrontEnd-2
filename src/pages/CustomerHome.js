@@ -19,7 +19,7 @@ const CustomerHome = () => {
             });
     }, [])
     return (
-        <div className='bgg'>
+        <div className="bgg">
             <Navbar2/>
             <br/><br/><br/>
             <div>
@@ -32,6 +32,7 @@ const CustomerHome = () => {
             
             &nbsp;
             <CustomerBarCard />
+
         </div>
     );
 };

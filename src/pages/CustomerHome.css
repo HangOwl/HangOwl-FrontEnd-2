@@ -1,12 +1,21 @@
-.bgg{
+.bgg2{
     background-image: url("../Pics/CustomerBG.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
     min-width: 100%;
     min-height: 500px;
-    padding-bottom: 50px;
+}
+
+.bgg{
+  background-image: url("../Pics/CustomerBG.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 500px;  
+  height: 100vh;
+  display: inline-table;
 }
 
 .box {
@@ -69,4 +78,3 @@
 .rsdiv{
     text-align: center;
 }
-

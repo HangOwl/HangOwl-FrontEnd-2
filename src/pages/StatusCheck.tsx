@@ -42,7 +42,7 @@ function StatusCheck() {
 
 
   return (
-    <div className="bgg">
+    <div className="bg">
       <Navbar2/>
       
       <br/><br/><br/>
