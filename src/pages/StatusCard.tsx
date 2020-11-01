@@ -3,37 +3,48 @@ import { NavLink } from 'react-router-dom';
 import { Button }  from 'reactstrap';
 import axios from 'axios';
 import './StatusCard.css'
-
-function Card0() {
+import StatusEdit from './StatusEdit';
+import StatusCancel from './StatusCancel';
+interface CardProps {
+    Status : any ,
+    NumberOfPeople :  any ,
+    DateReserve : any,
+    BarName: any
+    ResId: any;
+}
+function Card0(props : CardProps){
+    console.log("date ",props.DateReserve)
     return (
         <div className='centext'>
             <div className='statusbox'>
                 <br/><br/>
                 <p className='white'>[ Pending ]</p>&nbsp;&nbsp;&nbsp;
-                <p className='sttext'>Bar's Name | 3 people | date : 10/01/2020</p>
+                <p className='sttext'>{props.BarName} | {props.NumberOfPeople} people | {props.DateReserve}</p>
                 <br/>
                 <div className='cenbutton'>
-                    <Button className='stbut1'>
-                        <p className='submittext'>Edit reserved details</p>
-                    </Button>
+                    <StatusEdit BarName={props.BarName} NumberOfPeople={props.NumberOfPeople} DateReserve={props.DateReserve} ResId={props.ResId}/>
+                    {/* <Button className='stbut1'>
+                        <p className='submittext'><StatusEdit /></p>
+                    </Button> */}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Button className='stbut2'>
-                        <p className='submittext'>Cancel reserved</p>
-                    </Button>
+                    <StatusCancel ResId={props.ResId}/>
+                    {/* <Button className='stbut2'>
+                        <p className='submittext'><StatusCancel /></p>
+                    </Button> */}
                 </div>
             </div>
         </div>
     );
 }
 
-function Card1() {
+function Card1(props: CardProps) {
     return (
         <div className='centext'>
             <div className='statusbox'>
                 <br/><br/>
                 <p className='green'>[ Accepted ]</p>&nbsp;&nbsp;&nbsp;
-                <p className='sttext'>Bar's Name | 3 people | date : 10/01/2020</p>
+                <p className='sttext'>{props.BarName} | {props.NumberOfPeople} people | {props.DateReserve}</p>
                 <br/>
                 <Button className='stbut2'>
                         <p className='submittext'>Cancel reserved</p>
@@ -43,23 +54,34 @@ function Card1() {
     );
 }
 
-function Card2() {
+function Card2(props: CardProps) {
     return (
         <div className='centext'>
             <div className='statusbox'>
                 <br/><br/>
                 <p className='red'>[ Rejected ]</p>&nbsp;&nbsp;&nbsp;
-                <p className='sttext'>Bar's Name | 3 people | date : 10/01/2020 HIII</p>
+                <p className='sttext'>{props.BarName} | {props.NumberOfPeople} people | {props.DateReserve}</p>
                 <br/>
             </div>
         </div>
     );
 }
-interface CardProps {
-    Status : any ,
-    NumberOfPeople :  any ,
-    DateReserve : any
+
+function Card3(props: CardProps) {
+    return (
+        <div className='centext'>
+            <div className='statusbox'>
+                <br/><br/>
+                <p className='red'>[ Canceled ]</p>&nbsp;&nbsp;&nbsp;
+                <p className='sttext'>{props.BarName} | {props.NumberOfPeople} people | {props.DateReserve}</p>
+                <br/>
+            </div>
+        </div>
+    );
 }
+
+
+
 const StatusCard= (props : CardProps) => {
     
     const whatcolor = props.Status;
@@ -75,9 +97,11 @@ const StatusCard= (props : CardProps) => {
     // }
 
     return <div>
-        { whatcolor == '0' ? Card0() : null}
-        { whatcolor == '1' ? Card1() : null}
-        { whatcolor == '2' ? Card2() : null}
+        { whatcolor == '0' ? Card0(props) : null}
+        { whatcolor == '1' ? Card1(props) : null}
+        { whatcolor == '2' ? Card2(props) : null}
+        { whatcolor == '3' ? Card3(props) : null}
+
     </div> ;
 
     

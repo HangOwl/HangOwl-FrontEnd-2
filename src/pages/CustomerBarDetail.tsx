@@ -93,7 +93,7 @@ function CustomerBarDetail({match} : {match:any}) {
                 });      
     },[])
     return (
-        <div className='bgg'>
+        <div className="bgg">
             <Navbar2 />
             <div>
                 {/*<ul>{bardetail && bardetail.map(item => <li key={item._id}> {item._id} </li>)} </ul>*/}

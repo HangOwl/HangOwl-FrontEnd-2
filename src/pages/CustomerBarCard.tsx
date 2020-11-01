@@ -10,7 +10,7 @@ function CustomerBarCard() {
     
     const Tomap = () => {
                 return (                    
-                <div className="bgg">
+                <div>
                     {images.map((image) => (
                         window.barID = image._id,
                         <Link to={`/CustomerBarDetail/${window.barID}`}>

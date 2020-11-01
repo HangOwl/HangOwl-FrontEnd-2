@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar2 from '../components/Navbar/Navbar';
+import Navbar2 from '../components/Navbar/Navbar2';
 import StatusCard from './StatusCard';
 import axios from 'axios';
 import './StatusCheck.css'
@@ -22,7 +22,7 @@ function StatusCheck() {
               //     </div>
                   
               // </div>
-              <StatusCard Status={image.Status} NumberOfPeople={image.NumberOfPeople} DateReserve={image.DateReseve} />
+              <StatusCard Status={image.Status} NumberOfPeople={image.NumberOfPeople} DateReserve={image.DateReserve} BarName={image.BarName} ResId={image.ResId}/>
           ))}
       </div>
     )

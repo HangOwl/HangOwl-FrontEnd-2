@@ -3,8 +3,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    height: 100vh;
     min-width: 100%;
     min-height: 500px;
+    padding-bottom: 50px;
 }
 
 .box {

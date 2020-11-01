@@ -29,7 +29,7 @@ function Edit() {
             });
     }, [])
     return (
-        <div className='bgg'>
+        <div className="bgg">
             <Navbar2 />
             <br/><br/><br/>
             <header>
