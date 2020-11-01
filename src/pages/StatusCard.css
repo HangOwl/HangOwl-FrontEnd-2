@@ -1,0 +1,50 @@
+.statusbox {
+    margin: 10px auto;
+    height: 300px;
+    max-width: 60%;
+    background-image: url("./../Pics/CustomerBG.jpg");
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.red{
+    color: #FF0000;
+    font-family: Impact;
+    font-size: 28px;
+}
+
+.green{
+    color: #00FF0E;
+    font-family: Impact;
+    font-size: 28px;
+}
+
+.white{
+    color: #00FFFF;
+    font-family: Impact;
+    font-size: 28px;
+}
+
+.sttext{
+    color: #FFFFFF;
+    font-family: Impact;
+    font-size: 28px;
+}
+
+.stbut1{
+    background-image: url("./../Pics/defaultGreen1.png");
+    background-position: center;
+    text-align: center;
+    height: 60px;
+    width: 270px;
+}
+
+.stbut2{
+    background-image: url("./../Pics/defaultViolet1.png");
+    background-position: center;
+    text-align: center;
+    height: 60px;
+    width: 270px;
+}

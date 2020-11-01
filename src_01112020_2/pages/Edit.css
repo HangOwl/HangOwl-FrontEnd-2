@@ -1,0 +1,35 @@
+.edittoptext{
+    font-family: Impact;
+    font-size: 40px;
+    text-align: center;
+    color: #00FF0E;
+}
+
+.edittoptext2{
+    font-family: Impact;
+    font-size: 32px;
+    text-align: center;
+    color: #00FF0E;
+}
+
+.edittext{
+    font-family: Impact;
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.centext{
+    text-align: center;
+}
+
+.bg{
+    background-image: url("../Pics/CustomerBG.jpg");
+    height: 100vh;
+    min-height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

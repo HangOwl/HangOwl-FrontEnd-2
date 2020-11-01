@@ -1,0 +1,24 @@
+.edbutton{
+    height: 40px;
+    width: 60px;
+    border-radius: 0px;
+    background-image: url("../Pics/defaultGreen3.png");
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.edtext{
+    font-family: Impact;
+    font-size: 28px;
+    display: flex;
+    color: #373737;
+}
+
+.editbg .modal-content{
+    background-image: url("./../Pics/CustomerBG.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

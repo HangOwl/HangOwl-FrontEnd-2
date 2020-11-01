@@ -1,0 +1,89 @@
+input::placeholder{
+    font-family: Impact;
+    font-size: 16px;
+}
+
+/* Style the form - display items horizontally */
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+  
+/* Add some margins for each label */
+.form-inline label {
+    margin: 5px 10px 5px 0;
+    font-family: Impact;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Style the input fields */
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.signupcusbg .modal-content{
+    background-image: url("./../../Pics/CustomerBG(4K).jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formtext{
+    font-family: Impact;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sucustext{
+    font-family: Impact;
+    font-size: 36px;
+    text-align: center;
+    color: #00FF19;
+    ;
+}
+
+.cenbutton{
+    display: flex;
+    justify-content: center;
+}
+
+.submitbut{
+    background-image: url("./../../Pics/defaultGreen1.png");
+    background-position: center;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+}
+
+.submittext{
+    font-family: Impact;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cus1{
+    height: 76px;
+    width: 160px;
+    background-image: url(./../../Pics/defaultCyan3.png);
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cus2{
+    font-family: Impact;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8F8F8F;
+}

@@ -14,6 +14,17 @@ section{
     text-decoration: none;
 }
 
+.nametext3{
+    height:80px;
+    font-family: Impact;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    color: #00FF19;
+    text-decoration: none;
+}
+
 .box0{
     align-items: center;
     display: flex;
@@ -77,34 +88,7 @@ section{
 }
 
 .rsdiv{
-    /*
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    */
-    text-align:center;
-}
-
-.rsbutton{
-    /*
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0% auto;
-    padding: 0;
-    */
-    height: 68px;
-    width: 200px;
-    border-radius: 0px;
-    background-color: #00FFFF;
-}
-
-.rstext{
-    font-family: Impact;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
     text-align: center;
-    color: #8F8F8F;
 }
+
+

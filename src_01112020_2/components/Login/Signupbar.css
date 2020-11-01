@@ -1,0 +1,51 @@
+.signupbarbg .modal-content{
+    background-image: url("./../../Pics/BarBG.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.subartext{
+    font-family: Impact;
+    font-size: 36px;
+    text-align: center;
+    color: #FF00E5;
+    ;
+}
+
+.submitbut1{
+    background-image: url("./../../Pics/defaultViolet1.png");
+    background-position: center;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+}
+
+.bar1{
+    height: 76px;
+    width: 160px;
+    background-image: url(./../../Pics/defaultViolet1.png);
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.bar2{
+    font-family: Impact;
+    font-size: 28px;
+    display: flex;
+    color: #8F8F8F;
+}
+
+.cbtext{
+    font-family: Impact;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+   

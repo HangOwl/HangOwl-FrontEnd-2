@@ -1,0 +1,49 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import './BarPic.css'
+
+const BarPic2 = ({barID}) => {
+const [image,setImages] = useState([]);
+const [profile, setProfile] = useState('');
+//const barID = match.params.barID;
+
+    const Tomap = () => {
+        return ( 
+            <div>
+                <br /><br /><br />
+                    <div className="container">
+                        {image.map((image2) =>{
+                            return (
+                                <img className="card" src={`http://35.240.130.253:3001/pictures/` + image2} />
+                            );
+                        })}
+
+                    </div>  
+            </div>                                 
+        );
+    };
+
+    useEffect(() => {
+    axios.get(`http://35.240.130.253:3001/bars/${barID}`, {
+                    headers: {
+                        'Access-Control-Allow-Origin': '*'
+                    }
+                }).then((response) => {
+                    setImages(response.data.AdditionalPicPath);
+                });
+    },[]);
+
+    // const handleClick = () => {
+                
+    // }
+
+      return(
+
+            <div>
+                {/* <button onClick={handleClick}>Click to download</button> */}
+                <Tomap />
+            </div>
+      );
+  }
+
+  export default BarPic2;
