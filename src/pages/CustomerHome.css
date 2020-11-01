@@ -57,3 +57,16 @@
     color: #000000;
   }
   
+  .destext{
+    font-family: Impact;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.rsdiv{
+    text-align: center;
+}
+
