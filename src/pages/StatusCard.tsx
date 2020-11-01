@@ -49,7 +49,7 @@ function Card2() {
             <div className='statusbox'>
                 <br/><br/>
                 <p className='red'>[ Rejected ]</p>&nbsp;&nbsp;&nbsp;
-                <p className='sttext'>Bar's Name | 3 people | date : 10/01/2020</p>
+                <p className='sttext'>Bar's Name | 3 people | date : 10/01/2020 HIII</p>
                 <br/>
             </div>
         </div>
