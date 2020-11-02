@@ -36,7 +36,7 @@ const CustomerHome = () => {
             <br />
             <FavoriteBar />
             <br/><br/>
-
+            <h1 className='rectext2'><br/>All Bars</h1>
             <CustomerBarCard />
 
         </div>

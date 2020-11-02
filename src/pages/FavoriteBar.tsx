@@ -10,23 +10,12 @@ function FavoriteBar() {
     
     const Tomap = () => {
                 return (                    
-                <div className="container">
+                <div className="container3">
                     {images.map((image) => (
                         window.barID = image._id,
                         <Link to={`/CustomerBarDetail/${window.barID}`}>
-                        {/* <div className="box"> */}
-                            {/* <div className="container"> */}
                             {(image.ProfilePicPath === '') ? <img className="card" src={defaultImage} /> : <img className="card" src={`http://35.240.130.253:3001/pictures/` + image.ProfilePicPath} /> }
-                            {/* <img className="box1st" src={`http://35.240.130.253:3001/pictures/` + image.ProfilePicPath} />  */}
-                            {/* <div className="box2nd">
-                                <div className="textInBox2nd">
-                                    {image.BarName}
-                                </div>
-                            </div> */}
-                            {/* </div> */}
 
-                            
-                        {/* </div> */}
                         </Link>
                     ))}
                 </div>

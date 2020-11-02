@@ -13,6 +13,13 @@
   overflow-x: scroll;
 }
 
+.container3 {
+  display: flex;
+  overflow-x: scroll;
+  width: 80%;
+  padding-left: 100px;
+}
+
 .bgg{
   background-image: url("../Pics/CustomerBG.jpg");
   background-repeat: no-repeat;
