@@ -7,6 +7,12 @@
     min-height: 500px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
 .bgg{
   background-image: url("../Pics/CustomerBG.jpg");
   background-repeat: no-repeat;
@@ -77,4 +83,22 @@
 
 .rsdiv{
     text-align: center;
+}
+
+.rectext{
+  font-family: Impact;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.rectext2{
+  font-family: Impact;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  padding-left: 120px;
+  text-align: left;
+  color: #ffffff;
 }

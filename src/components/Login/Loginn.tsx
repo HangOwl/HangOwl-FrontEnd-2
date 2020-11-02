@@ -46,7 +46,7 @@ function Loginn(){
   const handleClick = () => {
     console.log('Role handleClick: ', window.Role);
     
-    if(window.Role === 0){
+    if(window.Role == 0){
       history.push(`/customerhome/${window.cusID}`);
     }else{
       history.push('/');

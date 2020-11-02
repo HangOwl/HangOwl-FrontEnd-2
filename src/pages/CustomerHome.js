@@ -5,6 +5,7 @@ import CustomerBarCard from './CustomerBarCard';
 import BarPic2 from '../components/BarCard/BarPic2';
 import axios from 'axios';
 import './CustomerHome.css'
+import FavoriteBar from './FavoriteBar';
 
 const CustomerHome = () => {
     useEffect(() => {
@@ -31,6 +32,11 @@ const CustomerHome = () => {
             {/* <CustomerBarCard/> */}
             
             &nbsp;
+            <h1 className='rectext2'><br/>Your Favorite Bar</h1>
+            <br />
+            <FavoriteBar />
+            <br/><br/>
+
             <CustomerBarCard />
 
         </div>
